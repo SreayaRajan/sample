@@ -1,0 +1,95 @@
+<h1>Insert Image</h1>
+<form action"" method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+     {{ form.as_p }}
+     <button type="submit">Upload</button>
+</form>     
+<br>
+<table border=1 width=600>
+    <tr><th>Caption</th></th>Image</th></tr>
+    {% for x in img %}
+    {% if forloop.first %}
+    <tr>
+        {% endif %}
+    <td>
+    <td><img src="{{ x.image.url}}" width="250" height="250"></td>
+    <tr><td>{{ x.caption }}</td>
+     
+{% endfor %}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
